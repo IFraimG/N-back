@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nback</string>
+    <string name="menu_users">Users</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_stats">Statistics</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_feedback">Write a feedback</string>
+</resources>

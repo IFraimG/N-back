@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_dark_blue"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/tabs_list"
+        layout="@layout/tabs_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <!--    <androidx.drawerlayout.widget.DrawerLayout-->
+    <!--        android:id="@+id/drawer_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:fitsSystemWindows="true"-->
+    <!--        >-->
+    <!--        <com.google.android.material.navigation.NavigationView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            android:fitsSystemWindows="true"-->
+    <!--            tools2:layout_editor_absoluteX="1dp"-->
+    <!--            tools2:layout_editor_absoluteY="1dp"-->
+    <!--            app2:headerLayout="@layout/header"-->
+    <!--            android:background="@color/theme_light_white_bg"-->
+    <!--            android:elevation="10dp"-->
+    <!--            />-->
+    <!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+    <LinearLayout
+        android:id="@+id/layout_of_bottom_nav"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:background="@color/light_blue_600"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

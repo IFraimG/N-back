@@ -6,4 +6,5 @@
     <string name="menu_stats">Статистика</string>
     <string name="menu_settings">Настройки</string>
     <string name="menu_feedback">Оставить отзыв</string>
+    <string name="getplaying">Начать прохождение</string>
 </resources>

@@ -3,10 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"  />
-
+    tools:context=".MainFragment"
+    android:paddingBottom="70dp"
+    android:paddingTop="70dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <Button
+        android:id="@+id/getplaying_btn"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@color/nb_dark_blue"
+        android:text="@string/getplaying"
+        android:onClick="getPlay"
+        android:textSize="16dp"
+        android:textColor="@color/white" />
 </FrameLayout>

@@ -2,21 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <GridLayout
-        android:id="@+id/grid_layout"
+    android:layout_height="match_parent"
+    android:id="@+id/main_field_layout">
+<!--        <View-->
+<!--            android:layout_width="@dimen/size_rectangle_withborder"-->
+<!--            android:layout_height="@dimen/size_rectangle_withborder"-->
+<!--            android:background="@color/gray_400"-->
+<!--            android:layout_marginRight="@dimen/margin_rect">-->
+<!--        </View>-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/field_id"
+        android:name="com.example.nback.FieldFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:columnCount="3"
-        android:rowCount="3"
-        android:orientation="horizontal"
-        >
-        <View
-            android:layout_width="@dimen/size_rectangle_withborder"
-            android:layout_height="@dimen/size_rectangle_withborder"
-            android:background="@color/gray_400"
-            android:layout_marginRight="@dimen/margin_rect">
-        </View>
-    </GridLayout>
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

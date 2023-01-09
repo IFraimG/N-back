@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="block_1" type="id" />
+    <item name="block_2" type="id" />
+    <item name="block_3" type="id" />
+    <item name="block_4" type="id" />
+    <item name="block_5" type="id" />
+    <item name="block_6" type="id" />
+    <item name="block_7" type="id" />
+    <item name="block_8" type="id" />
+    <item name="block_9" type="id" />
+</resources>
